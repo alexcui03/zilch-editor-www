@@ -1,18 +1,28 @@
 <template lang="pug">
 div.container
-  z-header/
-  z-footer/
+  div.post
+    img(src='~/static/icon.png').icon/
+    div.text
+      span Zilch Editor
+      br/
+      span 因为懂你, 所以适合你
 </template>
 
+<style lang="stylus">
+.post
+  width 100%
+  padding 3em 20%
 
-<script>
-import z_header from '~/components/header.vue';
-import z_footer from '~/components/footer.vue';
+.icon
+  width 200px
+  vertical-align middle
 
-export default {
-  components: {
-    'z-header': z_header,
-    'z-footer': z_footer
-  }
-};
-</script>
+.text
+  display inline-block
+  vertical-align middle
+  font-size 300%
+  padding-left 50px
+  font-weight 100
+  text-align left
+</style>
+
